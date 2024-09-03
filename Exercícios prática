@@ -1,0 +1,199 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO6JN8Jjri9bHn+RLmx02AY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Guhabreu/MEC-1/blob/main/Exerc%C3%ADcios%20pr%C3%A1tica\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nRSKxRDM-_Uz",
+        "outputId": "c16587c4-2cc4-4683-af35-ad8dde16868a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor em polegadas: 5\n",
+            "O valor em polegadas convertido para milímetros é:  127.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Conversão mm para polegada\n",
+        "P= float(input(\"Digite o valor em polegadas: \"))\n",
+        "mm= P*25.4\n",
+        "print(\"O valor em polegadas convertido para milímetros é: \", mm)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Verificar idade\n",
+        "idade= int(input(\"Digite sua idade: \"))\n",
+        "if 16 <= idade < 70:\n",
+        "    print(\"Você está na faixa etária entre 16 e 70 anos\")\n",
+        "else:\n",
+        "    print(\"Você está fora da faixa etária entre 16 e 70 anos\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VTbzXK3sB07j",
+        "outputId": "3bc18d5c-14db-40a8-9bab-e8a51186f23a"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 16\n",
+            "Você está na faixa etária entre 16 e 70 anos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Volume da esfera ex5\n",
+        "raio = float(input(\"Digite o raio da esfera: \"))\n",
+        "from math import pi\n",
+        "volume = (4/3)*pi*(raio**3)\n",
+        "print(\"O volume da esfera é: \", volume)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DokIkVW6Dvav",
+        "outputId": "bc584443-d5b7-410f-c79c-6d3e53ff3b08"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o raio da esfera: 80\n",
+            "O volume da esfera é:  2144660.584850632\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Converte ângulo em radianos ex6\n",
+        "graus = float(input(\"Digite o ângulo em graus: \"))\n",
+        "from math import pi\n",
+        "radianos = graus*(pi/180)\n",
+        "print(\"O ângulo em radianos é: \", radianos)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vwh3dkGuHty4",
+        "outputId": "57a91b72-0f84-4832-b359-431a22d13ec9"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o ângulo em graus: 10\n",
+            "O ângulo em radianos é:  0.17453292519943295\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Converte radianos em graus ex7\n",
+        "radianos = float(input(\"Digite o ângulo em radianos: \"))\n",
+        "from math import pi\n",
+        "graus = radianos*(180/pi)\n",
+        "print(\"O ângulo em graus é: \", graus)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f2d333ef-7be4-4e27-ea91-1110bb42454b",
+        "id": "BsbNkhj_IaEE"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o ângulo em radianos: 0.17\n",
+            "O ângulo em graus é:  9.740282517223996\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Converte ângulo radianos em grados\n",
+        "radianos = float(input(\"Digite o ângulo em radianos: \"))\n",
+        "from math import pi\n",
+        "grados = radianos*(200/pi)\n",
+        "print(\"O ângulo em grados é: \", grados)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e60_ZW41JZgS",
+        "outputId": "0e9800b7-5389-4512-f91f-85d627872954"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o ângulo em radianos: 6.28\n",
+            "O ângulo em grados é:  399.79721704684107\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
