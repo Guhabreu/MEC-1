@@ -1,0 +1,133 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN5fL3PnwZ33kRsdWwkLjmt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Guhabreu/MEC-1/blob/main/Exerc%C3%ADcios%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eOTudcjvARUw",
+        "outputId": "090ec715-e165-49cb-ebba-db7029cf2e83"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero inteiro:47\n",
+            "Este numero é impar\n"
+          ]
+        }
+      ],
+      "source": [
+        "#par ou ímpar\n",
+        "num = int(input('digite um numero inteiro:'))\n",
+        "if num % 2 == 0:\n",
+        "  print('Este numero é par')\n",
+        "else:\n",
+        "  print ('Este numero é impar')\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#raiz quadrada\n",
+        "import math\n",
+        "num = int(input('Digite um numero:'))\n",
+        "if num >= 0:\n",
+        "  raiz = math.sqrt(num)\n",
+        "  print('A raiz quadrada de {} é igual a {:.2f}'.format(num,raiz)) #.2f duas casas decimais\n",
+        "else:\n",
+        "  print('Não existe raiz real para esse número')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YtfomrofNj4A",
+        "outputId": "3b5ad972-6beb-47b9-a5ed-a85482ed1ef1"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero:-86\n",
+            "Não existe raiz real para esse número\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#comprimento e largura da camiseta\n",
+        "comprimento = float(input('Digite o comprimento da camiseta em centímetros:'))\n",
+        "largura = float(input('Digite a largura da camiseta em centímetros:'))\n",
+        "if comprimento <= 60 and largura <= 45:\n",
+        "  tamanho = 'PP'\n",
+        "elif comprimento <= 65 and largura <= 48:\n",
+        "  tamanho = 'P'\n",
+        "elif comprimento <= 70 and largura <= 51:\n",
+        "  tamanho = 'M'\n",
+        "elif comprimento <= 75 and largura <= 54:\n",
+        "  tamanho = 'G'\n",
+        "elif comprimento <= 80 and largura <= 57:\n",
+        "  tamanho = 'GG'\n",
+        "else:\n",
+        "  tamanho = 'XGG'\n",
+        "print('O tamanho da camiseta é {}'.format(tamanho))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fp0MtSMBQe7k",
+        "outputId": "3009a86a-ad93-4596-bccc-33c87bd32041"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o comprimento da camiseta em centímetros:57754\n",
+            "Digite a largura da camiseta em centímetros:4673467\n",
+            "O tamanho da camiseta é XGG\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
