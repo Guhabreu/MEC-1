@@ -1,0 +1,104 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPSy2YLnjAMZQ+OMVdqboQr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Guhabreu/MEC-1/blob/main/exerc%C3%ADcio%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "id": "x0kTS562DI-Q",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2a0dba20-c9aa-462c-98bd-bcb0731bc70f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero inteiro: 30\n",
+            "O numero 30 é multiplo de 3\n"
+          ]
+        }
+      ],
+      "source": [
+        "#multiplo de 3\n",
+        "numero = int(input(\"Digite um numero inteiro: \"))\n",
+        "if numero % 3 == 0:\n",
+        "    print(f\"O numero {numero} é multiplo de 3\")\n",
+        "else:\n",
+        "    print(f\"O numero {numero} não é multiplo de 3\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#média ponderada nota\n",
+        "nota1 = float(input(\"Digite a primeira nota: \"))\n",
+        "nota2 = float(input(\"Digite a segunda nota: \"))\n",
+        "peso1 = float(input(\"Digite o peso da primeira nota: \"))\n",
+        "peso2 = float(input(\"Digite o peso da segunda nota: \"))\n",
+        "media = (nota1 * peso1 + nota2 * peso2) / (peso1 + peso2)\n",
+        "if media >= 5:\n",
+        "    print(f\"A média é {media}, aluno aprovado\")\n",
+        "else:\n",
+        "    print(f\"A média é {media}, aluno reprovado\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kmdVAbCJGBdF",
+        "outputId": "cc2b7135-4ad5-4d00-86b0-bbc99c9d3b6e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota: 5\n",
+            "Digite a segunda nota: 3\n",
+            "Digite o peso da primeira nota: 2\n",
+            "Digite o peso da segunda nota: 3\n",
+            "A média é 3.8, aluno reprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3F-2UZDsK6tA"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
